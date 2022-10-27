@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	[사용자]로 로그인하셨습니다.
+	[사용자 : ${id}]로 로그인하셨습니다.
 </body>
 </html>

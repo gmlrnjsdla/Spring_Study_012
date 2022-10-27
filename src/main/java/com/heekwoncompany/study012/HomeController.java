@@ -45,18 +45,21 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/loginok")
-	public String loginok(HttpServletRequest request) {
+	public String loginok(HttpServletRequest request, Model model) {
 		
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
 		
 		if(id.equals("admin")&&pw.equals("12345")) {
+			model.addAttribute("id", id);
 			return "/admin";
 		}
 		else if(id.equals("user")&&pw.equals("12345")) {
+			model.addAttribute("id", id);
 			return "/user";
 		}
 		else {
+			model.addAttribute("id", id);
 			return "/noMember";
 		}
 		

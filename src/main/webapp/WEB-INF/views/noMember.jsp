@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	[비회원]으로 로그인합니다.
+	[비회원 : ${id}]으로 로그인합니다.
 </body>
 </html>
